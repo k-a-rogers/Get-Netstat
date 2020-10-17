@@ -106,8 +106,6 @@ http://powershellshocked.wordpress.com
 		}
 	}
 	Remove-variable -name netstat -force -erroraction silentlycontinue
-	if ($sort) {
-		$connections=$connections | Sort-Object -Property
-	}
+
 	return $connections
 }
